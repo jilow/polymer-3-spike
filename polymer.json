@@ -1,0 +1,23 @@
+{
+  "entrypoint": "public/index.html",
+  "shell": "src/my-app.js",
+  "fragments": [
+    "src/my-element.js"
+  ],
+  "sources": [
+    "src/my-app.js",
+    "public/**",
+    "package.json"
+  ],
+  "extraDependencies": [
+    "public/manifest.json",
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "builds": [
+    { 
+      "preset": "es6-unbundled"
+    }
+  ],
+  "moduleResolution": "node",
+  "npm": true
+}

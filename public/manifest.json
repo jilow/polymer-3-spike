@@ -1,0 +1,11 @@
+{
+  "description": "Polymer 3.0 App",
+  "manifest_version": 1,
+  "name": "Polymer 3 Spike",
+  "short_name": "P3 Spike",
+  "version": "0.1",
+  "start_url": ".",
+  "display": "fullscreen",
+  "background_color": "#fff",
+  "theme_color":"#fff"
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#fff">
+  <link rel="manifest" href="./public/manifest.json">
+  <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" async></script>
+  <script src="./src/my-app.js" type="module" async></script>
+  <style>
+    html, body {
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans', sans-serif;
+    }
+    #preload {
+      opacity: 0.5;
+    }
+    #preload > .toolbar {
+      height: 64px;
+      background-color: #ffffff;
+    }
+    #preload > .header {
+      background-color: #332a28;
+      height: calc(100vh - 64px);
+    }
+  </style>
+  <link async href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+  <my-app name="Polymer 3 Spike" title="Welcome to my Polymer 3 Spike" subtitle="Made with App Layout Elements">
+    <div id="preload"></div>
+    <script type="text/javascript">
+      document.getElementById('preload').innerHTML = `
+        <div class="toolbar"></div>
+        <div class="header"></div>
+      `
+    </script>
+    <noscript>
+      <p>Could not render the custom element. Check that JavaScript is enabled.</p>
+    </noscript>
+  </my-app>
+</body>
+</html>

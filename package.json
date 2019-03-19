@@ -1,0 +1,20 @@
+{
+  "name": "polymer-3-spike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/my-app.js",
+  "scripts": {
+    "serve": "polymer serve",
+    "build": "polymer build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@polymer/app-layout": "^3.0.2",
+    "@polymer/polymer": "latest",
+    "@webcomponents/webcomponentsjs": "latest"
+  },
+  "devDependencies": {
+    "polymer-cli": "^1.9.7"
+  }
+}
